@@ -1,43 +1,665 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
     <title>Ricky Suarez | Computer Science ePortfolio</title>
+
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        html {
+            scroll-behavior: smooth;
+        }
+
+        body {
+            margin: 0;
+            font-family: Arial, Helvetica, sans-serif;
+            background-color: #f4f6f8;
+            color: #222222;
+            line-height: 1.7;
+        }
+
+        header {
+            background-color: #172b4d;
+            color: white;
+            text-align: center;
+            padding: 60px 20px;
+        }
+
+        header h1 {
+            margin: 0;
+            font-size: 42px;
+        }
+
+        header h2 {
+            margin-top: 10px;
+            font-weight: normal;
+        }
+
+        header p {
+            max-width: 750px;
+            margin: 20px auto 0;
+            font-size: 18px;
+        }
+
+        nav {
+            background-color: #0f1f38;
+            padding: 15px;
+            text-align: center;
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            margin: 0 15px;
+            font-weight: bold;
+        }
+
+        nav a:hover {
+            text-decoration: underline;
+        }
+
+        main {
+            max-width: 1100px;
+            margin: auto;
+            padding: 30px 20px;
+        }
+
+        section {
+            background-color: white;
+            margin-bottom: 30px;
+            padding: 35px;
+            border-radius: 8px;
+            box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+        }
+
+        h2 {
+            color: #172b4d;
+            margin-top: 0;
+        }
+
+        h3 {
+            color: #284b75;
+        }
+
+        .intro {
+            font-size: 18px;
+        }
+
+        .artifact-card {
+            background-color: #f7f9fc;
+            border-left: 5px solid #172b4d;
+            padding: 25px;
+            margin-top: 25px;
+        }
+
+        .skills {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 10px;
+            margin-top: 20px;
+        }
+
+        .skill {
+            background-color: #e7edf5;
+            padding: 8px 14px;
+            border-radius: 20px;
+            font-size: 14px;
+        }
+
+        .button {
+            display: inline-block;
+            background-color: #172b4d;
+            color: white;
+            text-decoration: none;
+            padding: 10px 18px;
+            margin: 8px 5px 8px 0;
+            border-radius: 5px;
+        }
+
+        .button:hover {
+            background-color: #284b75;
+        }
+
+        .secondary-button {
+            background-color: #4c607d;
+        }
+
+        .highlight {
+            background-color: #eef4fa;
+            padding: 20px;
+            border-radius: 6px;
+            margin: 20px 0;
+        }
+
+        footer {
+            text-align: center;
+            background-color: #172b4d;
+            color: white;
+            padding: 25px;
+            margin-top: 30px;
+        }
+
+        @media (max-width: 700px) {
+
+            nav a {
+                display: block;
+                margin: 8px;
+            }
+
+            header h1 {
+                font-size: 32px;
+            }
+
+            section {
+                padding: 25px 20px;
+            }
+        }
+    </style>
 </head>
 
+
 <body>
+
+    <!-- Header -->
     <header>
         <h1>Ricky Suarez</h1>
         <h2>Computer Science ePortfolio</h2>
+
+        <p>
+            A collection of my work demonstrating software engineering,
+            algorithms and data structures, database development,
+            security, data analysis, and professional communication.
+        </p>
     </header>
 
+
+    <!-- Navigation -->
+    <nav>
+        <a href="#self-assessment">Self Assessment</a>
+        <a href="#code-review">Code Review</a>
+        <a href="#software">Software Engineering</a>
+        <a href="#algorithms">Algorithms</a>
+        <a href="#database">Databases</a>
+        <a href="#skills">Skills</a>
+    </nav>
+
+
     <main>
-        <section>
-            <h2>About Me</h2>
 
-            <p>
-                Welcome to my computer science ePortfolio. I have been enrolled
-                in the Computer Science program since the fall of 2021.
-                My career goal is to become a data analyst or data scientist.
+        <!-- Professional Self Assessment -->
+        <section id="self-assessment">
+
+            <h2>Professional Self Assessment</h2>
+
+            <p class="intro">
+                Completing the Computer Science program and developing this
+                ePortfolio have helped me understand how programming,
+                databases, algorithms, security, communication, and software
+                design work together when developing complete computing
+                solutions.
             </p>
 
             <p>
-                This ePortfolio presents my experience in software engineering,
-                algorithms and data structures, database development, data
-                analysis, security, and professional communication.
+                When I began the Computer Science program in fall 2021, much
+                of my attention was focused on learning how to write code that
+                worked correctly. As I progressed through the program, my
+                thinking expanded beyond basic functionality. I began
+                considering why software is designed in a particular way,
+                how efficiently it processes information, how securely it
+                handles data, and whether it actually solves the problem
+                faced by the user or organization.
             </p>
+
+            <p>
+                My coursework has provided experience with multiple areas of
+                computer science. I have developed applications using Python,
+                C++, Java, MongoDB, Dash, OpenGL, and other technologies.
+                I have worked with data structures including linked lists,
+                hash tables, binary search trees, dictionaries, tuples, and
+                heaps. I have also gained experience with database
+                development, data visualization, software architecture,
+                secure development practices, testing, and technical
+                documentation.
+            </p>
+
+            <p>
+                Communication and stakeholder requirements have also been
+                important parts of my education. Projects such as the
+                DriverPass system required me to interpret business
+                requirements and translate them into functional and
+                nonfunctional system requirements. My CS 499 code review
+                required me to evaluate an existing application, identify
+                weaknesses, explain technical problems, and justify planned
+                improvements in a professional presentation.
+            </p>
+
+            <p>
+                Security has become another important part of how I approach
+                software development. Through coursework involving secure
+                coding, HTTPS, cryptographic hashing, dependency checking,
+                access control, and vulnerability analysis, I learned that
+                security should be considered throughout the development
+                process instead of being added after a system is complete.
+            </p>
+
+            <p>
+                My professional interests have increasingly moved toward data
+                analysis and data science. I am interested in combining
+                programming, databases, visualization, and analytical
+                techniques to turn raw data into useful information. The work
+                presented in this portfolio demonstrates the technical
+                foundation I have developed to pursue those opportunities.
+            </p>
+
+
+            <div class="highlight">
+
+                <h3>How the Portfolio Fits Together</h3>
+
+                <p>
+                    The technical artifact used throughout this portfolio is
+                    the Grazioso Salvare Rescue Dog Dashboard, originally
+                    developed during CS 340. I selected one multifaceted
+                    application for all three enhancement categories because
+                    it allowed me to demonstrate how software engineering,
+                    algorithms, data structures, and databases operate
+                    together within one complete system.
+                </p>
+
+                <p>
+                    The first enhancement focused on software design and
+                    engineering. The second introduced an efficient rescue
+                    candidate ranking algorithm. The third strengthened the
+                    MongoDB database through aggregation pipelines, indexing,
+                    audit logging, and improved database security.
+                </p>
+
+                <p>
+                    Together, these enhancements demonstrate my ability to
+                    analyze existing software, identify weaknesses, improve
+                    performance, strengthen security, and develop solutions
+                    that provide useful information for organizational
+                    decision making.
+                </p>
+
+            </div>
+
         </section>
 
+
+        <!-- Code Review -->
+        <section id="code-review">
+
+            <h2>CS 499 Code Review</h2>
+
+            <p>
+                Before beginning the artifact enhancements, I completed a
+                detailed code review of the original Grazioso Salvare Rescue
+                Dog Dashboard. The review examined the existing functionality,
+                software architecture, algorithms, database operations,
+                security, maintainability, and areas that could be improved.
+            </p>
+
+            <p>
+                The review identified several areas for improvement,
+                including hardcoded database credentials, unsafe database
+                operations, fragile column indexing, limited algorithmic
+                decision support, and opportunities for stronger MongoDB
+                processing.
+            </p>
+
+            <p>
+                The planned enhancements from this review became the
+                foundation for the three enhancement categories shown below.
+            </p>
+
+            <!-- Replace # with your YouTube or video link -->
+            <a class="button" href="#" target="_blank">
+                Watch Code Review Video
+            </a>
+
+        </section>
+
+
+        <!-- Software Engineering -->
+        <section id="software">
+
+            <h2>Enhancement One: Software Design and Engineering</h2>
+
+            <div class="artifact-card">
+
+                <h3>Grazioso Salvare Rescue Dog Dashboard</h3>
+
+                <p>
+                    The first enhancement focused on improving the
+                    maintainability, security, reliability, and organization
+                    of the existing dashboard.
+                </p>
+
+                <p>
+                    The original application successfully connected to
+                    MongoDB and displayed shelter information through an
+                    interactive Dash interface. However, the code review
+                    identified several design weaknesses that would create
+                    problems in a larger or production environment.
+                </p>
+
+                <h3>Key Improvements</h3>
+
+                <ul>
+                    <li>
+                        Removed plaintext MongoDB credentials from the
+                        notebook and replaced them with environment variables.
+                    </li>
+
+                    <li>
+                        Updated the CRUD constructor so it uses the connection
+                        information supplied by the application.
+                    </li>
+
+                    <li>
+                        Added input validation and MongoDB specific error
+                        handling.
+                    </li>
+
+                    <li>
+                        Prevented empty update and delete queries from
+                        accidentally affecting the entire collection.
+                    </li>
+
+                    <li>
+                        Replaced numerical DataFrame column positions with
+                        descriptive column names.
+                    </li>
+
+                    <li>
+                        Added checks for missing records, invalid coordinates,
+                        and invalid table selections.
+                    </li>
+                </ul>
+
+
+                <div class="skills">
+                    <span class="skill">Python</span>
+                    <span class="skill">Dash</span>
+                    <span class="skill">Software Design</span>
+                    <span class="skill">Error Handling</span>
+                    <span class="skill">Secure Configuration</span>
+                    <span class="skill">MongoDB</span>
+                </div>
+
+                <br>
+
+                <!-- Update these paths to match your repository -->
+                <a class="button"
+                   href="artifacts/software/original_dashboard.ipynb">
+                    Original Artifact
+                </a>
+
+                <a class="button"
+                   href="artifacts/software/enhanced_dashboard.ipynb">
+                    Enhanced Artifact
+                </a>
+
+                <a class="button secondary-button"
+                   href="narratives/software-engineering.html">
+                    Enhancement Narrative
+                </a>
+
+            </div>
+
+        </section>
+
+
+        <!-- Algorithms -->
+        <section id="algorithms">
+
+            <h2>Enhancement Two: Algorithms and Data Structures</h2>
+
+            <div class="artifact-card">
+
+                <h3>Rescue Candidate Ranking System</h3>
+
+                <p>
+                    The second enhancement changed the dashboard from a basic
+                    filtering application into a decision support system.
+                    Instead of treating every matching dog equally, the
+                    dashboard evaluates available animals and ranks the
+                    strongest candidates for each rescue role.
+                </p>
+
+                <h3>Candidate Scoring</h3>
+
+                <p>
+                    Each animal receives a score based on rescue
+                    qualifications including breed, sex, age, valid location
+                    information, and whether the animal has a known name.
+                    The highest possible candidate score is 100.
+                </p>
+
+                <h3>Heap Based Selection</h3>
+
+                <p>
+                    Python's heapq data structure is used to maintain only the
+                    top 10 rescue candidates while records are processed.
+                    Instead of sorting the entire collection, the algorithm
+                    maintains a minimum heap containing only the strongest
+                    candidates.
+                </p>
+
+                <p>
+                    This provides approximately
+                    <strong>O(N log K)</strong> processing, where N represents
+                    the number of animals evaluated and K represents the
+                    number of candidates retained.
+                </p>
+
+                <p>
+                    A short term cache is also used to avoid repeating the
+                    same ranking operation when a filter is selected multiple
+                    times within a short period.
+                </p>
+
+
+                <div class="skills">
+                    <span class="skill">Algorithms</span>
+                    <span class="skill">Data Structures</span>
+                    <span class="skill">heapq</span>
+                    <span class="skill">Dictionaries</span>
+                    <span class="skill">Caching</span>
+                    <span class="skill">Big O Analysis</span>
+                </div>
+
+                <br>
+
+                <a class="button"
+                   href="artifacts/algorithms/original_dashboard.ipynb">
+                    Original Artifact
+                </a>
+
+                <a class="button"
+                   href="artifacts/algorithms/enhanced_dashboard.ipynb">
+                    Enhanced Artifact
+                </a>
+
+                <a class="button secondary-button"
+                   href="narratives/algorithms.html">
+                    Enhancement Narrative
+                </a>
+
+            </div>
+
+        </section>
+
+
+        <!-- Databases -->
+        <section id="database">
+
+            <h2>Enhancement Three: Databases</h2>
+
+            <div class="artifact-card">
+
+                <h3>MongoDB Database Enhancement</h3>
+
+                <p>
+                    The third enhancement focused on improving how the
+                    Grazioso Salvare application retrieves, processes,
+                    monitors, and protects information stored in MongoDB.
+                </p>
+
+                <h3>Database Improvements</h3>
+
+                <ul>
+
+                    <li>
+                        Added compound MongoDB indexes supporting commonly
+                        queried rescue candidate fields.
+                    </li>
+
+                    <li>
+                        Added an index for animal ID lookups.
+                    </li>
+
+                    <li>
+                        Added MongoDB aggregation pipelines for calculating
+                        animal outcome totals.
+                    </li>
+
+                    <li>
+                        Moved outcome reporting from pandas processing into
+                        MongoDB.
+                    </li>
+
+                    <li>
+                        Added an administrative audit collection that records
+                        database create, update, and delete activity.
+                    </li>
+
+                    <li>
+                        Continued using authenticated database access and
+                        environment based credential management.
+                    </li>
+
+                </ul>
+
+                <p>
+                    These changes demonstrate how database design can improve
+                    performance, accountability, security, and the usefulness
+                    of information provided to an application.
+                </p>
+
+
+                <div class="skills">
+                    <span class="skill">MongoDB</span>
+                    <span class="skill">PyMongo</span>
+                    <span class="skill">Aggregation Pipelines</span>
+                    <span class="skill">Compound Indexes</span>
+                    <span class="skill">Audit Logging</span>
+                    <span class="skill">Database Security</span>
+                </div>
+
+                <br>
+
+                <a class="button"
+                   href="artifacts/database/original_dashboard.ipynb">
+                    Original Artifact
+                </a>
+
+                <a class="button"
+                   href="artifacts/database/enhanced_dashboard.ipynb">
+                    Enhanced Artifact
+                </a>
+
+                <a class="button secondary-button"
+                   href="narratives/database.html">
+                    Enhancement Narrative
+                </a>
+
+            </div>
+
+        </section>
+
+
+        <!-- Skills -->
+        <section id="skills">
+
+            <h2>Technical Skills Demonstrated</h2>
+
+            <div class="skills">
+
+                <span class="skill">Python</span>
+                <span class="skill">C++</span>
+                <span class="skill">Java</span>
+
+                <span class="skill">MongoDB</span>
+                <span class="skill">PyMongo</span>
+                <span class="skill">Pandas</span>
+
+                <span class="skill">Dash</span>
+                <span class="skill">Plotly</span>
+                <span class="skill">Data Visualization</span>
+
+                <span class="skill">Algorithms</span>
+                <span class="skill">Data Structures</span>
+                <span class="skill">Big O Analysis</span>
+
+                <span class="skill">Software Engineering</span>
+                <span class="skill">Database Design</span>
+                <span class="skill">Secure Coding</span>
+
+                <span class="skill">CRUD Operations</span>
+                <span class="skill">Aggregation Pipelines</span>
+                <span class="skill">GitHub</span>
+
+            </div>
+
+        </section>
+
+
+        <!-- Career -->
         <section>
-            <h2>Portfolio Contents</h2>
 
-            <p>Code Review</p>
-            <p>Software Engineering and Design Enhancement</p>
-            <p>Algorithms and Data Structures Enhancement</p>
-            <p>Database Enhancement</p>
-            <p>Professional Self Assessment</p>
+            <h2>Professional Goals</h2>
+
+            <p>
+                My career goal is to continue developing my skills in data
+                analysis and data science. I am especially interested in
+                positions where I can combine programming, databases, data
+                visualization, and analytical problem solving to help
+                organizations make informed decisions.
+            </p>
+
+            <p>
+                This ePortfolio represents the technical foundation I have
+                developed throughout the Computer Science program and my
+                ability to continue learning and improving existing computing
+                solutions.
+            </p>
+
         </section>
+
     </main>
+
+
+    <footer>
+        <p>
+            Ricky Suarez | Computer Science ePortfolio
+        </p>
+
+        <p>
+            CS 499 Computer Science Capstone
+        </p>
+    </footer>
+
 </body>
+
 </html>
